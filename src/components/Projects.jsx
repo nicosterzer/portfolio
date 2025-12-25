@@ -16,13 +16,6 @@ function Projects() {
       technologies: ['ASP.NET', 'C#', 'SQL Server'],
       github: 'https://github.com/nicosterzer/ecommerce',
       demo: '#'
-    },
-    {
-      title: 'Perfil y README',
-      description: 'Repositorio con mi README que resume mi experiencia, habilidades y perfiles.',
-      technologies: ['Markdown', 'GitHub'],
-      github: 'https://github.com/nicosterzer/nicosterzer',
-      demo: '#'
     }
   ]
 
