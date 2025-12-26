@@ -18,7 +18,9 @@
   padding: 0 1.5rem;
 
   justify-content: center;   /* ⭐ centra el grid */
-  max-width: 900px;          /* ⭐ ancho máximo del bloque */
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;         /* ⭐ ancho máximo del bloque */
   margin: 0 auto;            /* ⭐ centra el bloque entero */
 }
 
@@ -32,8 +34,11 @@
   display: flex;
   flex-direction: column;
 
+  width: 100%;
+  box-sizing: border-box;
   max-width: 380px;    /* ⭐ evita que se estiren demasiado */
   margin: 0 auto;      /* ⭐ centra cada card en su columna */
+  min-width: 0;        /* ⭐ Permite encogerse en flex/grid */
 }
 
 .project-card:hover {
@@ -89,4 +94,20 @@
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 4rem 0;
+  }
+
+  .projects .section-title {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: minmax(0, 1fr); /* ⭐ Evita desbordamiento en móviles */
+    justify-items: center;
+    padding: 0 1rem;
+  }
 }

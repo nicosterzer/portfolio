@@ -14,7 +14,14 @@
 
 .contact-content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-info {
@@ -62,6 +69,7 @@
   display: flex;
   gap: 1.5rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social-link {
@@ -75,6 +83,7 @@
   border-radius: 50%;
   color: var(--text-light);
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .social-link:hover {
@@ -89,6 +98,10 @@
   padding: 2.5rem;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .form-group {
@@ -138,4 +151,14 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 4rem 0;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
 }

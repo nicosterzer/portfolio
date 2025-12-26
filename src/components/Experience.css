@@ -18,6 +18,8 @@
   flex-direction: column;
   gap: 2rem;
   padding: 0 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .experience-card {
@@ -27,6 +29,9 @@
   border-radius: 16px;
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
 .experience-card:hover {
@@ -84,6 +89,10 @@
 }
 
 @media (max-width: 768px) {
+  .experience {
+    padding: 4rem 0;
+  }
+
   .experience-card {
     padding: 1.5rem;
   }

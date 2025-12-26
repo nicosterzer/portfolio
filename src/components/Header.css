@@ -22,6 +22,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .nav-brand .brand-text {
@@ -95,6 +97,7 @@
     width: 100%;
     padding: 2rem;
     gap: 1.5rem;
+    box-sizing: border-box;
     transition: left 0.3s ease;
   }
 
@@ -102,4 +105,3 @@
     left: 0;
   }
 }
-

@@ -19,7 +19,11 @@
   gap: 2.5rem;
   align-items: center;
   justify-items: center;
-  margin-bottom: 4rem;
+  margin: 0 auto 4rem;
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Logos: tamaño controlado */
@@ -48,5 +52,11 @@
   .skill-logo {
     width: 44px;
     height: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 4rem 0;
   }
 }

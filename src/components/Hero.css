@@ -12,6 +12,7 @@
   margin: 0 auto;
   padding: 0 2rem;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-content {
@@ -101,6 +102,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0; /* ⭐ CRÍTICO: Permite que el ítem de la grilla se encoja */
 }
 
 .code-block {
@@ -110,6 +114,8 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   width: 100%;
   max-width: 500px;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
 .code-header {
@@ -158,7 +164,7 @@
 
 @media (max-width: 968px) {
   .hero-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr); /* ⭐ Fuerza a la columna a respetar el ancho de pantalla */
     gap: 3rem;
   }
 
@@ -186,6 +192,21 @@
 
   .hero-description {
     font-size: 1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-title {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-container {
+    padding: 0 1.5rem;
   }
 }
-
