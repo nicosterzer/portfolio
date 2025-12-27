@@ -1,4 +1,5 @@
 import React from 'react'
+import cvPdf from './public/nicolas_sterzer_cv.pdf'
 import './Contact.css'
 
 function Contact() {
@@ -65,7 +66,7 @@ function Contact() {
                 </a>
               ))}
             </div>
-            <a href="./src/components/public/nicolas_sterzer_cv.pdf" download="nicolas_sterzer_cv.pdf" className="btn btn-primary btn-download">
+            <a href={cvPdf} download="nicolas_sterzer_cv.pdf" className="btn btn-primary btn-download">
               Descargar CV
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
